@@ -1,0 +1,26 @@
+---
+
+- name: Install packages
+  pacman:
+    name: 
+      - git
+      - sudo
+      - base-devel
+    state: present
+
+- name: Install ansible-aur
+  git:
+    repo: https://github.com/kewlfft/ansible-aur.git
+    dest: /usr/share/ansible/plugins/modules/aur
+
+- name: Create aur_builder user
+  user:
+    name: aur_builder
+    group: wheel
+
+- name: Set no password for aur_builder when using pacman
+  lineinfile:
+    path: /etc/sudoers.d/11-install-aur_builder
+    line: 'aur_builder ALL=(ALL) NOPASSWD: /usr/bin/pacman'
+    create: yes
+    validate: 'visudo -cf %s'

@@ -1,0 +1,35 @@
+---
+
+- name: Install packages
+  pacman:
+    name:
+      - vim
+      - curl 
+      - firefox
+      - code
+      - flameshot
+      - git
+      - fzf
+      - keepassxc
+      - neovim
+      - wget
+      - xcape
+      - xclip
+      - xbindkeys
+      - zsh
+    state: present
+
+- name: Install Docker
+  pacman:
+    name:
+      - containerd
+      - docker
+      - docker-compose
+    state: present
+
+- name: Install Redshift
+  pacman:
+    name:
+      - redshift
+    state: present
+

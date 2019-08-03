@@ -1,0 +1,16 @@
+---
+
+- name: Install yay
+  become: yes
+  become_user: aur_builder
+  aur:
+    name: yay
+
+- name: Install aur packages
+  become: yes
+  become_user: aur_builder
+  aur:
+    name:
+      - google-chrome
+      - grive-git
+      - i3status-rust-git
