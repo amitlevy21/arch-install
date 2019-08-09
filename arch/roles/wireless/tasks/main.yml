@@ -22,7 +22,7 @@
   shell: 'echo -e "8192eu\n\nloop" | tee /etc/modules'
 
 - name: Updating changes to Grub & initramfs 
-  shell: 'update-grub && update-initramfs -u'
+  shell: 'grub-mkconfig -o /boot/grub/grub.cfg && mkinitcpio -p linux'
 
 - name: Rebooting
   reboot:
