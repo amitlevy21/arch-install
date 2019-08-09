@@ -24,5 +24,3 @@
 - name: Updating changes to Grub & initramfs 
   shell: 'grub-mkconfig -o /boot/grub/grub.cfg && mkinitcpio -p linux'
 
-- name: Rebooting
-  reboot:
