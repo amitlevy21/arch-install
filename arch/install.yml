@@ -4,5 +4,6 @@
   connection: local
   become: true
   roles:
+    - wireless
     - packages
     - packages_aur
