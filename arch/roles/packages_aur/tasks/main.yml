@@ -14,3 +14,4 @@
       - google-chrome
       - grive-git
       - i3status-rust-git
+      - lightdm-slick-greeter

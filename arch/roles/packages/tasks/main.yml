@@ -17,6 +17,11 @@
       - xclip
       - xbindkeys
       - zsh
+      - i3-gaps
+      - lightdm
+      - blueman
+      - compton
+      - nitrogen
     state: present
 
 - name: Install Docker
