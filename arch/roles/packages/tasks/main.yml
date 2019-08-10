@@ -7,6 +7,9 @@
       - curl 
       - firefox
       - code
+      - containerd
+      - docker
+      - docker-compose
       - flameshot
       - git
       - fzf
@@ -17,24 +20,11 @@
       - xclip
       - xbindkeys
       - zsh
+      - redshift
       - i3-gaps
       - lightdm
       - blueman
       - compton
       - nitrogen
-    state: present
-
-- name: Install Docker
-  pacman:
-    name:
-      - containerd
-      - docker
-      - docker-compose
-    state: present
-
-- name: Install Redshift
-  pacman:
-    name:
-      - redshift
     state: present
 
