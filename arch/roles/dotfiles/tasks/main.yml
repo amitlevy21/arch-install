@@ -2,12 +2,12 @@
 
 - name: Downloading restore_dotfiles.sh
   get_url:
-    url: https://gitlab.com/amitlevy/dotfiles/snippets/1882833/raw?inline=false
+    url: https://gitlab.com/snippets/1884428/raw
     dest: ${HOME}/restore_dotfiles.sh
     mode: '0700'
 
 - name: Running restore_dotfiles.sh
-  shell: restore_dotfiles
+  shell: ./restore_dotfiles
   args:
     chdir: ${HOME}
 

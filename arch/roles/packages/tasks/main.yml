@@ -26,5 +26,6 @@
       - blueman
       - compton
       - nitrogen
+      - openssh
     state: present
 

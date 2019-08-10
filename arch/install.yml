@@ -7,7 +7,6 @@
     - wireless
     - packages
     - packages_aur
-    - spotify
-    - users
+    - user
     - services
     - dotfiles
