@@ -16,6 +16,7 @@
 - name: Create aur_builder user
   user:
     name: aur_builder
+    password: password
     group: wheel
 
 - name: Set no password for aur_builder when using pacman

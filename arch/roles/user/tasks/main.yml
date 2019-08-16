@@ -3,6 +3,7 @@
 - name: Creating the regular user in wheel group and generate ssh key
   user:
     name: amit
+    password: password
     groups: wheel,docker
     append: yes
     generate_ssh_key: yes
