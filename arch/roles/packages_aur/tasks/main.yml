@@ -13,6 +13,6 @@
     name:
       - google-chrome
       - grive-git
-      - i3status-rust-git
+      - i3status-rust-bin
       - lightdm-slick-greeter
       - st-luke-git
