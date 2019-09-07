@@ -4,7 +4,7 @@
   pacman:
     name:
       - vim
-      - curl 
+      - curl
       - firefox
       - code
       - containerd
@@ -27,5 +27,7 @@
       - compton
       - nitrogen
       - openssh
+      - fd
+      - ripgrep
     state: present
 
