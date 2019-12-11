@@ -17,4 +17,3 @@
     systemctl --user enable grive-changes@$(systemd-escape google-drive).service &&
     systemctl --user start grive-changes@$(systemd-escape google-drive).service
 
-    

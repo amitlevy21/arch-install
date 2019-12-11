@@ -6,6 +6,7 @@
       - git
       - sudo
       - base-devel
+
     state: present
 
 - name: Install ansible-aur plugin

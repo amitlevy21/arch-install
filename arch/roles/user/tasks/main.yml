@@ -10,8 +10,9 @@
     ssh_key_bits: 2048
     ssh_key_file: .ssh/id_rsa
 
-- name: allow users in wheel group to run sudo commands 
+- name: allow users in wheel group to run sudo commands
   lineinfile:
     path: /etc/sudoers
     line: '%wheel ALL=(ALL) ALL'
     validate: 'visudo -cf %s'
+
