@@ -1,13 +1,13 @@
 ---
 
-- name: Downloading restore_dotfiles.sh
-  get_url:
-    url: https://gitlab.com/snippets/1884428/raw
-    dest: ${HOME}/restore_dotfiles.sh
-    mode: '0700'
+- name: Copying restore_dotfiles script
+  copy:
+    src: roles/dotfiles/files/restore_dotfiles.sh
+    dest: /home/amit/restore_dotfiles.sh
+    backup: yes
 
 - name: Running restore_dotfiles.sh
-  shell: ./restore_dotfiles
-  args:
-    chdir: ${HOME}
+  shell: ./restore_dotfiles.sh
+  become: yes
+  become_user: amit
 
