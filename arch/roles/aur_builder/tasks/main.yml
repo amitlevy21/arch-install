@@ -2,13 +2,13 @@
 
 - name: Install packages
   pacman:
-    name: 
+    name:
       - git
       - sudo
       - base-devel
     state: present
 
-- name: Install ansible-aur
+- name: Install ansible-aur plugin
   git:
     repo: https://github.com/kewlfft/ansible-aur.git
     dest: /usr/share/ansible/plugins/modules/aur
@@ -25,3 +25,4 @@
     line: 'aur_builder ALL=(ALL) NOPASSWD: /usr/bin/pacman'
     create: yes
     validate: 'visudo -cf %s'
+

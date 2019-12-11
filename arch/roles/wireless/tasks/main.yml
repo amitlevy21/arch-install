@@ -21,6 +21,6 @@
 - name: Configuring 8192eu module to load at boot
   shell: 'echo -e "8192eu\n\nloop" | tee /etc/modules'
 
-- name: Updating changes to Grub & initramfs 
+- name: Updating changes to Grub & initramfs
   shell: 'grub-mkconfig -o /boot/grub/grub.cfg && mkinitcpio -p linux'
 
