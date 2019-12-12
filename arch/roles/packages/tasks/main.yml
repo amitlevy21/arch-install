@@ -1,33 +1,7 @@
 ---
 
-- name: Install packages
-  pacman:
-    name:
-      - vim
-      - curl
-      - firefox
-      - code
-      - containerd
-      - docker
-      - docker-compose
-      - flameshot
-      - git
-      - fzf
-      - keepassxc
-      - neovim
-      - wget
-      - xcape
-      - xclip
-      - xbindkeys
-      - zsh
-      - redshift
-      - i3-gaps
-      - lightdm
-      - blueman
-      - compton
-      - nitrogen
-      - openssh
-      - fd
-      - ripgrep
-    state: present
+import_tasks:
+  - pacman.yml
+  - aur.yml
+  - spotify.yml
 
