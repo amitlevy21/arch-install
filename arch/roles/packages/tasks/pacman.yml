@@ -29,5 +29,6 @@
       - openssh
       - fd
       - ripgrep
+      - tmux
     state: present
 
