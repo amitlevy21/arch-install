@@ -15,4 +15,5 @@
       - grive-git
       - i3status-rust-bin
       - lightdm-slick-greeter
+      - starship
 
