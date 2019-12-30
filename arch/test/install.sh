@@ -1,5 +1,5 @@
 #!/bin/sh
 
-ansible-playbook pre_install.yml
-ansible-playbook install.yml
+ansible-playbook -vvvv pre_install.yml
+ansible-playbook -vvvv install.yml
 
