@@ -1,0 +1,7 @@
+---
+
+- name: Install forgit zsh plugin
+  git:
+    repo: https://github.com/wfxr/forgit.git
+    dst: /home/amit/.oh-my-zsh/custom/plugins/forgit
+
