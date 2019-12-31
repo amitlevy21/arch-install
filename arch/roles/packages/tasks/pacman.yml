@@ -33,6 +33,7 @@
       - alsa-utils
       - pulseaudio
       - nodejs
+      - npm
       - rofi
     state: present
 
