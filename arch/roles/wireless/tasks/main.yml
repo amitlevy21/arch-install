@@ -18,6 +18,9 @@
 - name: Installing the module to the kernel with dkms
   shell: 'dkms install rtl8192eu/1.0'
 
+- name: Blacklisting rtl8xxxu conflicting module
+  shell: echo "blacklist rtl8xxxu" | tee /etc/modprobe.d/rtl8xxxu.conf
+
 - name: Configuring 8192eu module to load at boot
   shell: 'echo -e "8192eu\n\nloop" | tee /etc/modules'
 
