@@ -16,4 +16,5 @@
       - i3status-rust-bin
       - lightdm-slick-greeter
       - starship
+      - nodejs-neovim
 

@@ -36,5 +36,6 @@
       - npm
       - rofi
       - qbittorrent
+      - python-pynvim
     state: present
 
