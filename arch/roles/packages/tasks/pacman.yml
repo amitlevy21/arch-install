@@ -35,5 +35,6 @@
       - nodejs
       - npm
       - rofi
+      - qbittorrent
     state: present
 
