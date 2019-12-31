@@ -30,5 +30,7 @@
       - fd
       - ripgrep
       - tmux
+      - alsa-utils
+      - pulseaudio
     state: present
 
