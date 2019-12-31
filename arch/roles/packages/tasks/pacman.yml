@@ -32,5 +32,6 @@
       - tmux
       - alsa-utils
       - pulseaudio
+      - nodejs
     state: present
 
