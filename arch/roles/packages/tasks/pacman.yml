@@ -37,5 +37,6 @@
       - rofi
       - qbittorrent
       - python-pynvim
+      - xorg
     state: present
 
