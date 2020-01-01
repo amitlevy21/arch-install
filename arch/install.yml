@@ -6,9 +6,7 @@
   roles:
     - wireless
     - packages
-    - packages_aur
     - user
     - services
-    - google_drive
-    - spotify
     - dotfiles
+

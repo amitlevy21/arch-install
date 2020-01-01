@@ -29,5 +29,13 @@
       - openssh
       - fd
       - ripgrep
+      - tmux
+      - alsa-utils
+      - pulseaudio
+      - nodejs
+      - npm
+      - rofi
+      - qbittorrent
+      - python-pynvim
     state: present
 

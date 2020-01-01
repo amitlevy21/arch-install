@@ -1,0 +1,13 @@
+---
+
+- name: Cloning fork of st
+  git:
+    repo: 'https://github.com/amitlevy21/st.git'
+    dest: '/home/amit/Dev/st'
+
+- name: Installing st
+  become: yes
+  make:
+    chdir: '/home/amit/Dev/st'
+    target: install
+

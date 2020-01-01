@@ -5,7 +5,7 @@ function dotf {
 }
 
 cd $HOME
-git clone --bare git@gitlab.com:amitlevy/dotfiles.git .dotfiles.git
+git clone --bare https://gitlab.com/amitlevy/dotfiles.git .dotfiles.git
 
 # move stock files that might cause issues
 mkdir -p .config-backup && \

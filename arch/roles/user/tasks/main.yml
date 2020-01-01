@@ -16,3 +16,8 @@
     line: '%wheel ALL=(ALL) ALL'
     validate: 'visudo -cf %s'
 
+- name: Changing shell to Zsh
+  shell: chsh -s $(which zsh)
+  become: yes
+  become_user: amit
+
