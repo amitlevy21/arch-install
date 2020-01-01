@@ -1,6 +1,6 @@
 ---
 
-- name: Installing fonts
+- name: Install fonts
   pacman:
     name:
       - powerline
@@ -8,10 +8,10 @@
       - ttf-linux-libertine
       - ttf-inconsolata
 
-- name: Installing aur fonts
+- name: Install aur fonts
   aur:
     name:
       - nerd-fonts-complete
 
-- name: Clearing font cache
+- name: Clear font cache
   shell: fc-cache -vf

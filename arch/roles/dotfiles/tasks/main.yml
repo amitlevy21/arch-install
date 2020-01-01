@@ -1,6 +1,6 @@
 ---
 
-- name: Copying restore_dotfiles script
+- name: Copy restore_dotfiles script
   copy:
     src: roles/dotfiles/files/restore_dotfiles.sh
     dest: /home/amit/restore_dotfiles.sh

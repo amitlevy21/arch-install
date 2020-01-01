@@ -1,12 +1,11 @@
 ---
 
-- name: Install packages
+- name: Install aur plugin dependencies
   pacman:
     name:
       - git
       - sudo
       - base-devel
-
     state: present
 
 - name: Install ansible-aur plugin

@@ -1,29 +1,29 @@
 ---
 
-- name: Installing linux headers and dkms for building kernel modules
+- name: Install linux headers and dkms for building kernel modules
   pacman:
     name:
       - linux-headers
       - dkms
     state: present
 
-- name: Cloning the module repository
+- name: Clone the module repository
   git:
     repo: 'https://github.com/Mange/rtl8192eu-linux-driver'
     dest: '/tmp/rtl8192eu-linux-driver'
 
-- name: Adding the module to dkms, will fail if already added
+- name: Add the module to dkms, will fail if already added
   shell: 'dkms add /tmp/rtl8192eu-linux-driver'
 
-- name: Installing the module to the kernel with dkms
+- name: Install the module to the kernel with dkms
   shell: 'dkms install rtl8192eu/1.0'
 
-- name: Blacklisting rtl8xxxu conflicting module
+- name: Blacklist rtl8xxxu conflicting module
   shell: echo "blacklist rtl8xxxu" | tee /etc/modprobe.d/rtl8xxxu.conf
 
-- name: Configuring 8192eu module to load at boot
+- name: Configure 8192eu module to load at boot
   shell: 'echo -e "8192eu\n\nloop" | tee /etc/modules'
 
-- name: Updating changes to Grub & initramfs
+- name: Update changes to Grub & initramfs
   shell: 'grub-mkconfig -o /boot/grub/grub.cfg && mkinitcpio -p linux'
 

@@ -3,5 +3,4 @@
 - import_tasks: pacman.yml
 - import_tasks: aur.yml
 - import_tasks: suckless.yml
-- import_tasks: custom.yml
 - import_tasks: fonts.yml

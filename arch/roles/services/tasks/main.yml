@@ -1,24 +1,23 @@
 ---
 
-- name: Copying lightdm global config file
+- name: Copy lightdm global config file
   copy:
     src: roles/services/files/lightdm.conf
     dest: /etc/lightdm/lightdm.conf
     backup: yes
 
-- name: Enabling lightdm service
+- name: Enable lightdm service
   systemd:
     name: lightdm
     enabled: yes
 
-- name: Enabling docker service
+- name: Enable docker service
   systemd:
     name: docker
     enabled: yes
 
-- name: Enabling redshift service
+- name: Enable redshift service
   systemd:
     name: redshift
     scope: global
     enabled: yes
-

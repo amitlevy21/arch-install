@@ -1,11 +1,11 @@
 ---
 
-- name: Cloning fork of st
+- name: Clone fork of st
   git:
     repo: 'https://github.com/amitlevy21/st.git'
     dest: '/home/amit/Dev/st'
 
-- name: Installing st
+- name: Install st
   become: yes
   make:
     chdir: '/home/amit/Dev/st'
