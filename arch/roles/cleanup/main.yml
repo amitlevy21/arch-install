@@ -1,0 +1,8 @@
+---
+
+- name: Delete aur_builder user
+  user:
+    name: aur_builder
+    remove: yes
+    state: absent
+
