@@ -40,5 +40,6 @@
       - xorg
       - xarchiver
       - unzip
+      - mpv
     state: present
 
