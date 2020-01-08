@@ -41,5 +41,6 @@
       - xarchiver
       - unzip
       - mpv
+      - pcmanfm
     state: present
 
