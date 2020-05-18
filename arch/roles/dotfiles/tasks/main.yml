@@ -2,12 +2,12 @@
 
 - name: Copy restore_dotfiles script
   copy:
-    src: roles/dotfiles/files/restore_dotfiles.sh
+    src: /home/amit/ansible-playbooks/arch/roles/dotfiles/files/restore_dotfiles.sh
     dest: /home/amit/restore_dotfiles.sh
     backup: yes
 
 - name: Running restore_dotfiles.sh
-  shell: ./restore_dotfiles.sh
+  shell: /home/amit/restore_dotfiles.sh
   become: yes
   become_user: amit
 
