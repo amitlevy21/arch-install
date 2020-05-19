@@ -6,18 +6,14 @@
     dest: /etc/lightdm/lightdm.conf
     backup: yes
 
+- name: Copy lightdm greeter config file
+  copy:
+    src: roles/services/files/slick-greeter.conf
+    dest: /etc/lightdm/slick-greeter.conf
+    backup: yes
+
+
 - name: Enable lightdm service
   systemd:
     name: lightdm
-    enabled: yes
-
-- name: Enable docker service
-  systemd:
-    name: docker
-    enabled: yes
-
-- name: Enable redshift service
-  systemd:
-    name: redshift
-    scope: global
     enabled: yes
