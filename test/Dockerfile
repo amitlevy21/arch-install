@@ -6,4 +6,5 @@ WORKDIR /ansible
 
 COPY . .
 
-CMD ["test/install.sh"]
+CMD ["make", "install"]
+
