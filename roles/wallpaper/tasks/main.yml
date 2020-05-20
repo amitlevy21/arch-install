@@ -1,0 +1,7 @@
+---
+
+- name: Set Wallpaper
+  copy:
+    src: roles/wallpaper/files/wallpaper.jpg
+    dst: /usr/share/wallpapers/wallpaper.jpg
+
