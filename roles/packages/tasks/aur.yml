@@ -16,4 +16,5 @@
       - lightdm-slick-greeter
       - starship
       - nodejs-neovim
+      - oh-my-zsh-git
 
