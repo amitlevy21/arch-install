@@ -17,4 +17,5 @@
       - starship
       - nodejs-neovim
       - oh-my-zsh-git
+      - xbindkeys
 

@@ -18,7 +18,6 @@
       - wget
       - xcape
       - xclip
-      - xbindkeys
       - zsh
       - redshift
       - i3-gaps
