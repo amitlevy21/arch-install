@@ -6,5 +6,6 @@
     - user
     - services
     - dotfiles
+    - plugins
     - cleanup
 

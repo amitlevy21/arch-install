@@ -18,4 +18,5 @@
       - nodejs-neovim
       - oh-my-zsh-git
       - xbindkeys
+      - vim-plug-git
 

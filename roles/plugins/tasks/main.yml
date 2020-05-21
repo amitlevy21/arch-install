@@ -1,0 +1,7 @@
+---
+
+- name: install vim plugins
+  shell: nvim --headless +PlugInstall +qall
+  become: yes
+  become_user: amit
+
