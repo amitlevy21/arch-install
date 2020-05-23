@@ -23,7 +23,7 @@
       - i3-gaps
       - lightdm
       - blueman
-      - compton
+      - picom
       - nitrogen
       - openssh
       - fd
