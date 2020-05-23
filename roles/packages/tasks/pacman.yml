@@ -41,5 +41,7 @@
       - unzip
       - mpv
       - pcmanfm
+      - zsh-syntax-highlighting
+      - zsh-autosuggestions
     state: present
 
