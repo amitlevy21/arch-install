@@ -1,13 +1,15 @@
 ---
 
 - name: Clone fork of st
+  become: yes
+  become_user: amit
   git:
-    repo: 'https://github.com/amitlevy21/st.git'
-    dest: '/home/amit/Dev/st'
+    repo: https://github.com/amitlevy21/st.git
+    dest: /home/amit/dev/st
 
 - name: Install st
   become: yes
   make:
-    chdir: '/home/amit/Dev/st'
+    chdir: /home/amit/dev/st
     target: install
 
