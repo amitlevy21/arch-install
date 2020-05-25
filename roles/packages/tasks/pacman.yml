@@ -3,11 +3,9 @@
 - name: Install packages
   pacman:
     name:
-      - vim
       - curl
       - firefox
       - code
-      - containerd
       - docker
       - docker-compose
       - flameshot
