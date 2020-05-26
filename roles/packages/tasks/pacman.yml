@@ -3,43 +3,43 @@
 - name: Install packages
   pacman:
     name:
-      - curl
-      - firefox
+      - alsa-utils
+      - blueman
       - code
+      - curl
       - docker
       - docker-compose
-      - flameshot
-      - git
-      - fzf
-      - keepassxc
-      - neovim
-      - wget
-      - xcape
-      - xclip
-      - zsh
-      - redshift
-      - i3-gaps
-      - lightdm
-      - blueman
-      - picom
-      - nitrogen
-      - openssh
       - fd
-      - ripgrep
-      - tmux
-      - alsa-utils
-      - pulseaudio
+      - firefox
+      - flameshot
+      - fzf
+      - git
+      - i3-gaps
+      - keepassxc
+      - lightdm
+      - mpv
+      - neovim
+      - nitrogen
       - nodejs
       - npm
-      - rofi
-      - qbittorrent
-      - python-pynvim
-      - xorg
-      - xarchiver
-      - unzip
-      - mpv
+      - openssh
       - pcmanfm
-      - zsh-syntax-highlighting
+      - picom
+      - pulseaudio
+      - python-pynvim
+      - qbittorrent
+      - redshift
+      - ripgrep
+      - rofi
+      - tmux
+      - unzip
+      - wget
+      - xarchiver
+      - xcape
+      - xclip
+      - xorg
+      - zsh
       - zsh-autosuggestions
+      - zsh-syntax-highlighting
     state: present
 
