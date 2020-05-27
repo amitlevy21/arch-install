@@ -1,2 +1,0 @@
-[arch-pc]
-localhost ansible_connection=local
