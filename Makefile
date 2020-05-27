@@ -5,6 +5,6 @@ test:
 	docker run deploy_test
 
 install:
-	ansible-playbook pre_install.yml
-	ansible-playbook install.yml
+	ansible-playbook playbooks/pre_install.yml
+	ansible-playbook playbooks/install.yml
 
