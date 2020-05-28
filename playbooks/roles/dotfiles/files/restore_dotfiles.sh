@@ -1,7 +1,7 @@
 #!/bin/sh
 
 function dotf {
-  /usr/bin/git --git-dir=$HOME/.dotfiles.git/ --work-tree=$HOME $@
+  /usr/bin/git --git-dir=$HOME/.config/dotfiles.git/ --work-tree=$HOME $@
 }
 
 function backup {
@@ -13,7 +13,7 @@ function backup {
 export -f backup # for the use in xargs
 
 cd $HOME
-git clone --bare https://gitlab.com/amitlevy/dotfiles.git .dotfiles.git
+git clone --bare https://gitlab.com/amitlevy/dotfiles.git $HOME/.config/dotfiles.git
 
 # move stock files that might cause issues
 mkdir -p .config-backup && \
