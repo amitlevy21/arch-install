@@ -2,10 +2,10 @@
 
 - name: Copy restore dotfiles script
   copy:
-    src: roles/dotfiles/files/restore_dotfiles.sh
+    src: "roles/dotfiles/files/restore_dotfiles.sh {{ dotfiles_git_repo }}"
     dest: "/home/{{ username }}/restore_dotfiles.sh"
     backup: yes
-    mode: 777
+    mode: "777"
 
 - name: Running restore dotfiles script
   shell: "/home/{{ username }}/restore_dotfiles.sh"
