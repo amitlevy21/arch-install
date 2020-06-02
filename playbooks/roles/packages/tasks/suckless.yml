@@ -2,14 +2,14 @@
 
 - name: Clone fork of st
   become: yes
-  become_user: amit
+  become_user: "{{ username }}"
   git:
     repo: https://github.com/amitlevy21/st.git
-    dest: /home/amit/dev/st
+    dest: "/home/{{ username }}/dev/st"
 
 - name: Install st
   become: yes
   make:
-    chdir: /home/amit/dev/st
+    chdir: "/home/{{ username }}/dev/st"
     target: install
 
