@@ -18,6 +18,7 @@
       - i3-gaps
       - keepassxc
       - lightdm
+      - light-locker
       - mpv
       - neovim
       - nitrogen
