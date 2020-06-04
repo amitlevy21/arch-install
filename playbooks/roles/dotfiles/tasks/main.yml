@@ -1,14 +1,14 @@
 ---
 
-- name: Copy restore dotfiles script
-  copy:
-    src: "roles/dotfiles/files/restore_dotfiles.sh {{ dotfiles_git_repo }}"
-    dest: "/home/{{ username }}/restore_dotfiles.sh"
-    backup: yes
-    mode: "777"
+- name: Clone bare dotfiles repo
+  git:
+    repo: {{ dotfiles_git_repo }}
+    dest: "/home/{{ username }}"
+    separate_git_dir: "/home/{{ username }}/.config/dotfiles.git"
+    force: yes
 
-- name: Running restore dotfiles script
-  shell: "/home/{{ username }}/restore_dotfiles.sh"
+- name: Don't show untracked files on git status
   become: yes
   become_user: "{{ username }}"
+  shell: "/usr/bin/git --git-dir=$HOME/.config/dotfiles.git --work-tree=$HOME config --local status.showUntrackedFiles no"
 
