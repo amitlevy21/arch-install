@@ -14,6 +14,7 @@
       - google-chrome
       - i3status-rust-bin
       - lightdm-slick-greeter
+      - lynis-git
       - nodejs-neovim
       - oh-my-zsh-git
       - starship
