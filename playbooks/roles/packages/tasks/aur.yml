@@ -13,6 +13,7 @@
     name:
       - google-chrome
       - i3status-rust-bin
+      - lazygit
       - lightdm-slick-greeter
       - lsix
       - lynis-git
