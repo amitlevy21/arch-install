@@ -17,11 +17,12 @@
       - git
       - i3-gaps
       - keepassxc
-      - lightdm
       - light-locker
+      - lightdm
       - mpv
       - neovim
       - nitrogen
+      - nnn
       - nodejs
       - npm
       - openssh
@@ -33,6 +34,7 @@
       - redshift
       - ripgrep
       - rofi
+      - sxiv
       - tmux
       - unzip
       - wget
