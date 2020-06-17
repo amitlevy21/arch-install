@@ -4,6 +4,7 @@
   pacman:
     name:
       - alsa-utils
+      - bat
       - blueman
       - code
       - curl
