@@ -3,6 +3,7 @@
 - name: Install packages
   pacman:
     name:
+      - alacritty
       - alsa-utils
       - bat
       - blueman
