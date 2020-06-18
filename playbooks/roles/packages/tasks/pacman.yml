@@ -31,6 +31,7 @@
       - pcmanfm
       - picom
       - pulseaudio
+      - pulseaudio-bluetooth
       - python-pynvim
       - qbittorrent
       - redshift
