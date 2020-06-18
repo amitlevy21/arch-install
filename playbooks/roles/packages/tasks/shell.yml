@@ -1,10 +1,5 @@
 ---
 
-- name: Install zsh-forgit
-  git:
-    repo: https://github.com/wfxr/forgit.git
-    dest: "{{ lookup('env', 'ZSH_CUSTOM') | default('/usr/share/oh-my-zsh/custom') }}/plugins/forgit"
-
 - name: Fix ch-last-dir plugin permissions
   file:
     path: "{{ lookip('env', 'ZSH_CACHE_DIR') | default('/usr/share/oh-my-zsh/cache') }}/last-working-dir"
