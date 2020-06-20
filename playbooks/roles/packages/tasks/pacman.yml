@@ -24,7 +24,6 @@
       - mpv
       - neovim
       - nitrogen
-      - nnn
       - nodejs
       - npm
       - openssh
@@ -34,6 +33,7 @@
       - pulseaudio-bluetooth
       - python-pynvim
       - qbittorrent
+      - ranger
       - redshift
       - ripgrep
       - rofi
@@ -41,6 +41,7 @@
       - tmux
       - unzip
       - wget
+      - w3m
       - xarchiver
       - xcape
       - xclip
