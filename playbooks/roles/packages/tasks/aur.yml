@@ -16,6 +16,7 @@
       - lazygit
       - lightdm-slick-greeter
       - lynis-git
+      - neovim-nightly
       - nodejs-neovim
       - oh-my-zsh-git
       - python-ueberzug
