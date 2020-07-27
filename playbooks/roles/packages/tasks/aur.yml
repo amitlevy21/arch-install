@@ -12,7 +12,7 @@
   aur:
     name:
       - google-chrome
-      - i3status-rust-bin
+      - i3status-rust
       - lazygit
       - lightdm-slick-greeter
       - lynis-git
