@@ -17,6 +17,8 @@
       - flameshot
       - fzf
       - git
+      - gvfs
+      - gvfs-mtp
       - i3-gaps
       - keepassxc
       - light-locker
