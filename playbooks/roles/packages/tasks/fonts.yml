@@ -3,15 +3,12 @@
 - name: Install fonts
   pacman:
     name:
-      - powerline
-      - powerline-fonts
-      - ttf-linux-libertine
-      - ttf-inconsolata
+      - otf-font-awesome
 
 - name: Install aur fonts
   aur:
     name:
-      - nerd-fonts-complete
+      - nerd-fonts-meslo
 
 - name: Clear font cache
   shell: fc-cache -vf
