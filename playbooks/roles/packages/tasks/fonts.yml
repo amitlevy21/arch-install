@@ -4,6 +4,7 @@
   pacman:
     name:
       - otf-font-awesome
+      - noto-fonts-emoji
 
 - name: Install aur fonts
   aur:
