@@ -12,8 +12,8 @@
       - docker
       - docker-compose
       - dunst
+      - evince
       - fd
-      - firefox
       - flameshot
       - fzf
       - git
