@@ -1,7 +1,0 @@
----
-
-- name: Fix ch-last-dir plugin permissions
-  file:
-    path: "{{ lookip('env', 'ZSH_CACHE_DIR') | default('/usr/share/oh-my-zsh/cache') }}/last-working-dir"
-    mode: '770'
-

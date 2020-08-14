@@ -32,7 +32,6 @@
   connection: local
   roles:
     - wireless
-    - packages
     - user
     - services
     - dotfiles

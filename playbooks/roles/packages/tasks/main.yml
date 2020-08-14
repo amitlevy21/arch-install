@@ -1,6 +1,0 @@
----
-
-- import_tasks: pacman.yml
-- import_tasks: aur.yml
-- import_tasks: fonts.yml
-
