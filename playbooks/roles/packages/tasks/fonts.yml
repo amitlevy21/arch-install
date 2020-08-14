@@ -5,6 +5,7 @@
     name:
       - otf-font-awesome
       - noto-fonts-emoji
+      - awesome-terminal-fonts
 
 - name: Install aur fonts
   aur:
