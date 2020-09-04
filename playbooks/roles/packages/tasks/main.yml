@@ -1,0 +1,15 @@
+---
+
+- name: Install yay
+  become_user: "{{ username }}"
+  git:
+    repo: "https://aur.archlinux.org/yay.git"
+    dest: "/home/{{ username }}/yay"
+
+- name: Install packages
+  become: yes
+  shell: "pacman -S --needed - < /home/{{ username }}/.config/pacman/packages"
+
+- name: Install aur packages
+  become: yes
+  shell: "yay -S --needed - < /home/{{ username }}/.config/yay/packages"
