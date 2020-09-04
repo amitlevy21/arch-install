@@ -32,8 +32,8 @@
   connection: local
   roles:
     - user
-    - packages
     - dotfiles
+    - packages
     - plugins
     - services
     - wallpaper

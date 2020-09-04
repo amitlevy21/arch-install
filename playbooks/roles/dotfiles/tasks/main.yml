@@ -1,6 +1,8 @@
 ---
 
 - name: Clone bare dotfiles repo
+  become: yes
+  become_user: "{{ username }}"
   git:
     repo: "{{ dotfiles_git_repo }}"
     dest: "/home/{{ username }}"
