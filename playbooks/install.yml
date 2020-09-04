@@ -32,9 +32,9 @@
   connection: local
   roles:
     - user
-    - services
     - packages
     - dotfiles
     - plugins
+    - services
     - wallpaper
 
