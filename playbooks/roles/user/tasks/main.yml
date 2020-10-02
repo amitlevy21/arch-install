@@ -1,16 +1,14 @@
 ---
-
 - name: Create the regular user in wheel group
   user:
     name: "{{ username }}"
-    password: "{{ password }}"
-    groups: wheel,docker
+    groups:
+      - wheel
     append: yes
     shell: /usr/bin/zsh
 
 - name: Allow users in wheel group to run sudo commands
   lineinfile:
     path: /etc/sudoers
-    line: '%wheel ALL=(ALL) ALL'
-    validate: 'visudo -cf %s'
-
+    line: "%wheel ALL=(ALL) ALL"
+    validate: "visudo -cf %s"
