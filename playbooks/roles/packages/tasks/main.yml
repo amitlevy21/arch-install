@@ -1,15 +1,26 @@
 ---
+- name: Clone yay
+  git:
+    repo: https://aur.archlinux.org/yay.git
+    dest: /opt/yay
+
+- name: Ensure permissions
+  file:
+    path: /opt/yay
+    state: directory
+    owner: "{{ username }}"
 
 - name: Install yay
+  become: yes
   become_user: "{{ username }}"
-  git:
-    repo: "https://aur.archlinux.org/yay.git"
-    dest: "/home/{{ username }}/yay"
+  shell:
+    chdir: /opt/yay
+    cmd: makepkg -si --needed --noconfirm
 
 - name: Install packages
   become: yes
-  shell: "pacman -S --needed - < /home/{{ username }}/.config/pacman/packages"
+  shell: "pacman -S --needed --noconfirm - < /home/{{ username }}/.config/pacman/packages"
 
 - name: Install aur packages
   become: yes
-  shell: "yay -S --needed - < /home/{{ username }}/.config/yay/packages"
+  shell: "yay -S --needed --noconfirm - < /home/{{ username }}/.config/yay/packages"
