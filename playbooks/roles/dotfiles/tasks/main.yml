@@ -5,9 +5,13 @@
   become_user: "{{ username }}"
   git:
     repo: "{{ dotfiles_git_repo }}"
-    dest: "/home/{{ username }}"
-    separate_git_dir: "/home/{{ username }}/.config/dotfiles.git"
-    force: yes
+    bare: yes
+    dest: "/home/{{ username }}/.config/dotfiles.git"
+
+- name: Checkout bare dotfiles repo
+  become: yes
+  become_user: "{{ username }}"
+  shell: "/usr/bin/git --git-dir=$HOME/.config/dotfiles.git --work-tree=$HOME checkout --force"
 
 - name: Don't show untracked files on git status
   become: yes
