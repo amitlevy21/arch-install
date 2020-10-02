@@ -1,35 +1,9 @@
 ---
-
 - hosts: 127.0.0.1
   connection: local
-  vars_prompt:
-    - name: "username"
-      prompt: "Enter user name"
-  tasks:
-    - set_fact: username={{ username }}
-      no_log: true
-
-- hosts: 127.0.0.1
-  connection: local
-  vars_prompt:
-    - name: "password"
-      prompt: "Enter user password"
-  tasks:
-    - set_fact: password={{ password }}
-      no_log: true
-
-- hosts: 127.0.0.1
-  connection: local
-  vars_prompt:
-    - name: "dotfiles_git_repo"
-      prompt: "Enter dotfiles git repo full url (Ex. https://github.com/user/dotfiles.git)"
-  tasks:
-    - set_fact: dotfiles_git_repo={{ dotfiles_git_repo }}
-      no_log: true
-
-
-- hosts: 127.0.0.1
-  connection: local
+  vars:
+    username: "{{ username }}"
+    dotfiles_git_repo: "{{ dotfiles_git_repo }}"
   roles:
     - user
     - dotfiles
@@ -37,4 +11,3 @@
     - plugins
     - services
     - wallpaper
-
